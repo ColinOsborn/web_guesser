@@ -1,5 +1,7 @@
 require "sinatra"
+require "sinatra/reloader"
 
-get '/' do
-  "Hello World!"
+get "/" do
+  num = rand(10)
+  "The SECRET new number is #{num}!"
 end
